@@ -3,150 +3,250 @@
 
 <head>
 
-  <title>Название модели</title>
+    <title>Название модели</title>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/model.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <style>
-       
-        .threejs {
-            margin: 0 auto;
-            width: 100%;
-
-            height: 400px;
-        }
-        form {
-            width: 90%;
-            margin: 0 auto;
-            text-align: center;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/model.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-<div class="threejs"></div>
-<form>
-    <label><input type="radio" value="gray" name="color" checked>Серый</label>
-    <label><input type="radio" value="red" name="color">Красный</label>
-    <label><input type="radio" value="green" name="color">Зеленый</label>
-    <label><input type="radio" value="blue" name="color">Синий</label>
-</form>
-<script src="three.js"></script>
-<script src="STLloader.js"></script>
-<script>
 
-    const div = document.querySelector('.threejs');
-    let mesh;
+    <nav class="navbar navbar-light bg-warning">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Короткова Арина 13 лаба</span>
+        </div>
+    </nav>
+    <div class="myclass">
+        <div class="model">
 
-    document.forms[0].addEventListener('change', (e) => {
-        mesh.material.color.set(e.target.value);
-    })
+            <div class="threejs">
+            </div>
 
-    window.addEventListener( 'resize', onWindowResize );
+            <div class="about-model">
+                <form>
+                    <label><input type="radio" value="gray" name="color" checked>Серый</label>
+                    <label><input type="radio" value="red" name="color">Красный</label>
+                    <label><input type="radio" value="green" name="color">Зеленый</label>
+                    <label><input type="radio" value="blue" name="color">Синий</label>
+                </form>
+                <h1>Название модели <a href="#">&#9733</a></h1>
+                <h2>Автор</h2>
+                <p>Описание модели Описание модели Описание модели Описание модели Описание модели Описание модели
+                    Описание
+                    модели Описание модели Описание модели Описание модели Описание модели Описание модели Описание
+                    модели
+                    Описание модели Описание модели Описание моделиОписание модели Описание модели Описание модели
+                    Описание
+                    модели Описание модели Описание модели Описание модели Описание моделиОписание модели Описание
+                    модели
+                </p>
 
-    function onWindowResize() {
+            </div>
 
-        camera.aspect = div.clientWidth / div.clientHeight;
-        camera.updateProjectionMatrix();
+        </div>
 
-        renderer.setSize( div.clientWidth, div.clientHeight );
+        <div class="sugg">
+            <h2>
+                Рекомендации
+            </h2>
 
-    }
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/1.jpg"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Другая модель</h5>
+                            <p class="card-text">Тут будет небольшое описание модели из рекомендаций.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/1.jpg"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Другая модель</h5>
+                            <p class="card-text">Тут будет небольшое описание модели из рекомендаций.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/1.jpg"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Другая модель</h5>
+                            <p class="card-text">Тут будет небольшое описание модели из рекомендаций.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/1.jpg"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Другая модель</h5>
+                            <p class="card-text">Тут будет небольшое описание модели из рекомендаций.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/1.jpg"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Другая модель</h5>
+                            <p class="card-text">Тут будет небольшое описание модели из рекомендаций.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-white" style="background-color: #ffc107;">
 
-    const clock = new THREE.Clock();
 
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(50, div.clientWidth / div.clientHeight, 0.1, 100);
-    camera.position.set( 3, 0.7, 3 );
-    cameraTarget = new THREE.Vector3( 0, 0.4, 0 );
+        <div class="text-center p-3">
+            © 2022 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Короткова Арина, 201-323, 13 лаба</a>
+        </div>
+    </footer>
+    <script src="three.js"></script>
+    <script src="STLloader.js"></script>
+    <script>
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(div.clientWidth, div.clientHeight);
+        const div = document.querySelector('.threejs');
+        let mesh;
 
-    div.appendChild(renderer.domElement);
-    renderer.shadowMap.enabled = true;
+        document.forms[0].addEventListener('change', (e) => {
+            mesh.material.color.set(e.target.value);
+        })
 
-    scene.background = new THREE.Color( 'gray' );
-    scene.fog = new THREE.Fog( 'gray', 1, 5 );
+        window.addEventListener('resize', onWindowResize);
 
-    const hemiLight = new THREE.HemisphereLight( 0xffffff, 0x444444 );
-    hemiLight.position.set( 0, 200, 0 );
-    scene.add( hemiLight );
+        function onWindowResize() {
 
-    const directionalLight = new THREE.DirectionalLight( 0xffffff );
-    directionalLight.position.set( 25, 25, 25 );
-    directionalLight.castShadow = true;
+            camera.aspect = div.clientWidth / div.clientHeight;
+            camera.updateProjectionMatrix();
 
-    directionalLight.shadow.mapSize.width = 2000; // default
-    directionalLight.shadow.mapSize.height = 2000; // default
-    directionalLight.shadow.camera.top = 10;
-    directionalLight.shadow.camera.bottom = - 10;
-    directionalLight.shadow.camera.left = - 10;
-    directionalLight.shadow.camera.right = 10;
-    scene.add( directionalLight );
+            renderer.setSize(div.clientWidth, div.clientHeight);
 
-    const plane = new THREE.Mesh(
-        new THREE.PlaneGeometry( 4000, 4000 ),
-        new THREE.MeshPhongMaterial( { color: 0x808080, dithering: true } )
-    );
-    plane.rotation.x = - Math.PI / 2;
-    plane.receiveShadow = true;
-    scene.add( plane );
+        }
 
-    const loader = new STLLoader();
-    loader.load( '/models/qtip.STL', function ( geometry ) {
+        const clock = new THREE.Clock();
 
-        const material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 } );
-        mesh = new THREE.Mesh( geometry, material );
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(50, div.clientWidth / div.clientHeight, 0.1, 100);
+        camera.position.set(3, 0.7, 3);
+        cameraTarget = new THREE.Vector3(0, 0.4, 0);
 
-        let box = new THREE.Box3();
-        let size = new THREE.Vector3();
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(div.clientWidth, div.clientHeight);
 
-        box.setFromObject(mesh).getSize(size);
-        mesh.scale.set( 1/size.y , 1/size.y, 1/size.y );
+        div.appendChild(renderer.domElement);
+        renderer.shadowMap.enabled = true;
 
-        let center = new THREE.Vector3()
-        box.setFromObject(mesh).getCenter(center);
+        scene.background = new THREE.Color('gray');
+        scene.fog = new THREE.Fog('gray', 1, 5);
 
-        mesh.position.set( -center.x, 0, -center.z);
+        const hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444);
+        hemiLight.position.set(0, 200, 0);
+        scene.add(hemiLight);
 
-        mesh.castShadow = true;
+        const directionalLight = new THREE.DirectionalLight(0xffffff);
+        directionalLight.position.set(25, 25, 25);
+        directionalLight.castShadow = true;
 
-        scene.add( mesh );
+        directionalLight.shadow.mapSize.width = 2000; // default
+        directionalLight.shadow.mapSize.height = 2000; // default
+        directionalLight.shadow.camera.top = 10;
+        directionalLight.shadow.camera.bottom = - 10;
+        directionalLight.shadow.camera.left = - 10;
+        directionalLight.shadow.camera.right = 10;
+        scene.add(directionalLight);
 
-    } );
+        const plane = new THREE.Mesh(
+            new THREE.PlaneGeometry(4000, 4000),
+            new THREE.MeshPhongMaterial({ color: 0x808080, dithering: true })
+        );
+        plane.rotation.x = - Math.PI / 2;
+        plane.receiveShadow = true;
+        scene.add(plane);
+
+        const loader = new STLLoader();
+        loader.load('/models/qtip.STL', function (geometry) {
+
+            const material = new THREE.MeshPhongMaterial({ color: 0xAAAAAA, specular: 0x111111, shininess: 200 });
+            mesh = new THREE.Mesh(geometry, material);
+
+            let box = new THREE.Box3();
+            let size = new THREE.Vector3();
+
+            box.setFromObject(mesh).getSize(size);
+            mesh.scale.set(1 / size.y, 1 / size.y, 1 / size.y);
+
+            let center = new THREE.Vector3()
+            box.setFromObject(mesh).getCenter(center);
+
+            mesh.position.set(-center.x, 0, -center.z);
+
+            mesh.castShadow = true;
+
+            scene.add(mesh);
+
+        });
 
 
-    camera.position.z = 5;
+        camera.position.z = 5;
 
-    function animate() {
+        function animate() {
 
-        requestAnimationFrame( animate );
+            requestAnimationFrame(animate);
 
-        render();
+            render();
 
-    }
+        }
 
-    function render() {
+        function render() {
 
-        const elapsedTime = clock.getElapsedTime()
+            const elapsedTime = clock.getElapsedTime()
 
-        camera.position.x = Math.cos(elapsedTime * 0.5)*2;
-        camera.position.z = Math.sin(elapsedTime * 0.5)*2;
+            camera.position.x = Math.cos(elapsedTime * 0.5) * 2;
+            camera.position.z = Math.sin(elapsedTime * 0.5) * 2;
 
-        camera.lookAt( cameraTarget );
+            camera.lookAt(cameraTarget);
 
-        renderer.render( scene, camera );
+            renderer.render(scene, camera);
 
-    }
+        }
 
-    animate();
-</script>
+        animate();
+    </script>
 </body>
 
 </html>
